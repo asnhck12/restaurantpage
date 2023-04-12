@@ -1,4 +1,4 @@
-function loadHomePage() {
+function loadHomePage() {                   
     const contentBody = document.getElementById('content');
     const title = document.createElement('div');
     const titleSection = document.createElement('h2');
@@ -13,7 +13,7 @@ function loadHomePage() {
     const aboutSection = document.createElement('div');
     const about = document.createElement('p');
     aboutSection.setAttribute('id','about');
-    about.innerHTML = "Welcome to our restaurant, a place with a warm atmosphere and a wide variety of delicious food and drink.";
+    about.innerHTML = "Welcome to our restaurant, a place with a warm atmosphere and delicious food and drink.";
 
     contentBody.appendChild(title);
     title.appendChild(titleSection);

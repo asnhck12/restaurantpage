@@ -27,11 +27,35 @@ function clearPage() {
     contentBody.innerHTML = '';
 }
 
-window.addEventListener('load', loadMenu);
-window.addEventListener('load', loadHomePage);
-homeButton.addEventListener('click', loadMenu);
-homeButton.addEventListener('click', loadHomePage);
-menuButton.addEventListener('click', loadMenu);
-menuButton.addEventListener('click', menu);
-contactButton.addEventListener('click', loadMenu);
-contactButton.addEventListener('click', contactPage);
+window.addEventListener('load', () => {
+    loadMenu();
+    loadHomePage();
+    homeButton.style.background = "Azure";
+    menuButton.style.background = "transparent";
+    contactButton.style.background = "transparent";
+});
+
+homeButton.addEventListener('click', () => {
+    loadMenu();
+    loadHomePage();
+    homeButton.style.background = "Azure";
+    menuButton.style.background = "transparent";
+    contactButton.style.background = "transparent";
+});
+
+menuButton.addEventListener('click', () => {
+    loadMenu();
+    menu();
+    homeButton.style.background = "transparent";
+    menuButton.style.background = "Azure";
+    contactButton.style.background = "transparent";
+});
+
+contactButton.addEventListener('click', () => {
+    loadMenu();
+    contactPage();
+    homeButton.style.background = "transparent";
+    menuButton.style.background = "transparent";
+    contactButton.style.background = "Azure";
+});
+
