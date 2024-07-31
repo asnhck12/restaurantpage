@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+#tabSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    
+}
+
+#title, #about,#contactPage, #menu {
+    text-align: center;
+}
+
+#about {
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;;
+    padding: 20px;
+}
+
+#mainImage {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+
+img {
+    height: 200mm;
+    width: auto;
+}
+
+button {
+    border: 0.5px black solid;
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    margin: 2%;
+    border-radius: 20px;
+}
+button:focus {
+    background-color: yellowgreen;
+}

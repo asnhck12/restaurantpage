@@ -8,7 +8,7 @@ function loadHomePage() {
     const mainImageSection = document.createElement('div');
     const mainImage = document.createElement('img');
     mainImageSection.setAttribute('id','mainImage');
-    mainImage.src = "../assets/Restaurant small.jpg";
+    mainImage.src = "./assets/restaurant_small.jpg";
 
     const aboutSection = document.createElement('div');
     const about = document.createElement('p');
